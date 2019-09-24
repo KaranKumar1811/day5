@@ -59,5 +59,36 @@ public class CollectionFrameWorkExample {
         System.out.println(stringMap.entrySet());
         stringMap.putIfAbsent("TO","Toronto");
         System.out.println(stringMap);
+
+
+
+        ArrayList<String> Canada=new ArrayList<>();
+        Canada.add("Ontario");
+        Canada.add("Alberta");
+        Canada.add("British Colombia");
+
+        ArrayList<String> India=new ArrayList<>();
+        India.add("Punjab");
+        India.add("Gujrat");
+        India.add("Himachal");
+        India.add("Goa");
+
+        ArrayList<String> US=new ArrayList<>();
+        US.add("New York");
+        US.add("California");
+        US.add("Texas");
+        US.add("New Jersey");
+
+        Map<String, ArrayList<String>> Country=new HashMap<>();
+        Country.put("CA",Canada);
+        Country.put("IND",India);
+        Country.put("USA",US);
+        System.out.println(Country);
+
+
+        
+
+
+
     }
 }
