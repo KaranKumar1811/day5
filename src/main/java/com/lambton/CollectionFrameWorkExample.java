@@ -1,5 +1,7 @@
 package com.lambton;
 
+import javax.sound.midi.Soundbank;
+import java.security.Key;
 import java.util.*;
 
 public class CollectionFrameWorkExample {
@@ -86,7 +88,53 @@ public class CollectionFrameWorkExample {
         System.out.println(Country);
 
 
-        
+        System.out.println("\n\n\nNew Class Excersice\n\n\n");
+
+
+        ArrayList<String> data=new ArrayList<>();
+        data.add("abc");
+        data.add("cab");
+        data.add("cat");
+        data.add("mate");
+        data.add("atem");
+        data.add("bac");
+        data.add("tac");
+        data.add("atc");
+        data.add("pop");
+        data.add("pat");
+        data.add("123");
+        data.add("231");
+        data.add("431");
+
+        System.out.println(data);
+
+
+        Map<String,ArrayList<String>> hm=new HashMap<>();
+
+        for(String s:data)
+        {
+            char[] c=s.toCharArray();
+            Arrays.sort(c);
+            String key=new String (c);
+            ArrayList<String> al=hm.get(key);
+            if(al==null)
+            {
+                al=new ArrayList<>();
+            }
+
+            al.add(s);
+            hm.put(key,al);
+        }
+
+        System.out.println(hm);
+
+
+
+
+
+
+
+
 
 
 
